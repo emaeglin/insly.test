@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Insurance calculator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="qfc-container">
+        <h2>Insurance calculator</h2>
+        <label>Simple car insurance calculator which will output price of the policy</label>
+        <form id="calculator">
+            <div>
+                <div>
+                    <label>Full Name</label>
+                    <input name="name" placeholder="" type="text" required>
+                </div>
+                <div>
+                    <label>Estimated value of the car (100 - 100 000 EUR)</label>
+                    <input name="estimated_value" placeholder="" type="number" min="100" max="10000" required>
+                </div>
+                <div>
+                    <label>Tax percentage (0 - 100%)</label>
+                    <input name="tax_percentage" placeholder="" type="number" min="1" max="100" required>
+                </div>
+
+                <div>
+                    <label>Number of instalments</label>
+                    <select name="instalments">
+                        <option value="1">One</option>
+                        <option value="2">Еwo</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                        <option value="5">Five</option>
+                        <option value="6">Six</option>
+                        <option value="7">Seven</option>
+                        <option value="8">Eight</option>
+                        <option value="9">Nine</option>
+                        <option value="10">Ten</option>
+                        <option value="12">Eleven</option>
+                        <option value="13">Twelve</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState == "interactive") {
+                calculator.init();
+            }
+        }
+    </script>
+</body>
+</html>
