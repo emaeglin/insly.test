@@ -27,5 +27,5 @@ and JavaScript.
 
 <h1>TASK 3 - Store employee data<h1>
 <p>
-<a target="_blank" href="https://github.com/emaeglin/insly.test/blob/master/task3/">Result</a>
+<a target="_blank" href="https://github.com/emaeglin/insly.test/tree/master/task_3">Result</a>
 </p>
