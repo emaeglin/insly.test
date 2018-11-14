@@ -20,7 +20,7 @@ Decode: "print out your name with one of php loop"<br />
 Write a simple car insurance calculator which will output price of the policy using vanilla PHP
 and JavaScript.
 <br />
-<a target="_blank" href="https://github.com/emaeglin/insly.test/blob/master/task2/">Result</a><br />
+<a target="_blank" href="https://github.com/emaeglin/insly.test/tree/master/task_2">Result</a><br />
 <p>
 
 <br />
