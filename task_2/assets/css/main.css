@@ -11,6 +11,21 @@ body {
     background: var(--main-bg-color);
 }
 
+.hidden {
+    display: none;
+}
+
+.hidden-item {
+    display: none;
+}
+
+.summary {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    border-left: 2px solid #D0E4F5;
+}
+
 .qfc-container {
     --form-theme-color: #00bcd4;
     --form-bg-color: white;

@@ -15,4 +15,8 @@ class Env {
     public static function getRequest() {
         return RequestContext::getInstance();
     }
+
+    public static function getConfigs() {
+        return Configs::getInstance();
+    }
 }

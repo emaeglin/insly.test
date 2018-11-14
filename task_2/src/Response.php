@@ -6,7 +6,7 @@ class Response {
      */
     public static function json($object) {
         header('Content-Type: application/json; charset=utf-8');
-        echo json_encode($object, JSON_UNESCAPED_UNICODE);
+        echo json_encode($object + ['result'=>'OK'], JSON_UNESCAPED_UNICODE);
         die;
     }
 }

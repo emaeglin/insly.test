@@ -4,6 +4,7 @@
     <title>Insurance calculator</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/table.css">
     <script src="assets/js/main.js"></script>
 </head>
 
@@ -30,7 +31,7 @@
                     <label>Number of instalments</label>
                     <select name="instalments">
                         <option value="1">One</option>
-                        <option value="2">Еwo</option>
+                        <option value="2">Two</option>
                         <option value="3">Three</option>
                         <option value="4">Four</option>
                         <option value="5">Five</option>
@@ -50,6 +51,109 @@
                 </div>
             </div>
         </form>
+        <div id="result" class="hidden">
+            <table class="blueTable">
+                <thead>
+                <tr>
+                    <th colspan="2" class="hidden-item" id="inst">Policy</th>
+                    <th class="hidden-item" id="inst_1">1 inst.</th>
+                    <th class="hidden-item" id="inst_2">2 inst.</th>
+                    <th class="hidden-item" id="inst_3">3 inst.</th>
+                    <th class="hidden-item" id="inst_4">4 inst.</th>
+                    <th class="hidden-item" id="inst_5">5 inst.</th>
+                    <th class="hidden-item" id="inst_6">6 inst.</th>
+                    <th class="hidden-item" id="inst_7">7 inst.</th>
+                    <th class="hidden-item" id="inst_8">8 inst.</th>
+                    <th class="hidden-item" id="inst_9">9 inst.</th>
+                    <th class="hidden-item" id="inst_10">10 inst.</th>
+                    <th class="hidden-item" id="inst_11">11 inst.</th>
+                    <th class="hidden-item" id="inst_12">12 inst.</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="summary">Values</td>
+                    <td class="hidden-item" id="value">0.00</td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                    <td class="hidden-item"></td>
+                </tr>
+                <tr>
+                    <td class="summary">Base Premium</td>
+                    <td class="hidden-item" id="base_price_of_policy">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_1">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_2">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_3">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_4">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_5">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_6">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_7">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_8">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_9">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_10">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_11">0.00</td>
+                    <td class="hidden-item" id="base_price_of_policy_12">0.00</td>
+                </tr>
+                <tr>
+                    <td class="summary">Commission</td>
+                    <td class="hidden-item" id="commission">0.00</td>
+                    <td class="hidden-item" id="commission_1">0.00</td>
+                    <td class="hidden-item" id="commission_2">0.00</td>
+                    <td class="hidden-item" id="commission_3">0.00</td>
+                    <td class="hidden-item" id="commission_4">0.00</td>
+                    <td class="hidden-item" id="commission_5">0.00</td>
+                    <td class="hidden-item" id="commission_6">0.00</td>
+                    <td class="hidden-item" id="commission_7">0.00</td>
+                    <td class="hidden-item" id="commission_8">0.00</td>
+                    <td class="hidden-item" id="commission_9">0.00</td>
+                    <td class="hidden-item" id="commission_10">0.00</td>
+                    <td class="hidden-item" id="commission_11">0.00</td>
+                    <td class="hidden-item" id="commission_12">0.00</td>
+                </tr>
+                <tr>
+                    <td class="summary">Tax</td>
+                    <td class="hidden-item" id="tax">0.00</td>
+                    <td class="hidden-item" id="tax_1">0.00</td>
+                    <td class="hidden-item" id="tax_2">0.00</td>
+                    <td class="hidden-item" id="tax_3">0.00</td>
+                    <td class="hidden-item" id="tax_4">0.00</td>
+                    <td class="hidden-item" id="tax_5">0.00</td>
+                    <td class="hidden-item" id="tax_6">0.00</td>
+                    <td class="hidden-item" id="tax_7">0.00</td>
+                    <td class="hidden-item" id="tax_8">0.00</td>
+                    <td class="hidden-item" id="tax_9">0.00</td>
+                    <td class="hidden-item" id="tax_10">0.00</td>
+                    <td class="hidden-item" id="tax_11">0.00</td>
+                    <td class="hidden-item" id="tax_12">0.00</td>
+                </tr>
+                <tr>
+                    <td class="summary">Total</td>
+                    <td class="hidden-item" id="total">0.00</td>
+                    <td class="hidden-item" id="total_1">0.00</td>
+                    <td class="hidden-item" id="total_2">0.00</td>
+                    <td class="hidden-item" id="total_3">0.00</td>
+                    <td class="hidden-item" id="total_4">0.00</td>
+                    <td class="hidden-item" id="total_5">0.00</td>
+                    <td class="hidden-item" id="total_6">0.00</td>
+                    <td class="hidden-item" id="total_7">0.00</td>
+                    <td class="hidden-item" id="total_8">0.00</td>
+                    <td class="hidden-item" id="total_9">0.00</td>
+                    <td class="hidden-item" id="total_10">0.00</td>
+                    <td class="hidden-item" id="total_11">0.00</td>
+                    <td class="hidden-item" id="total_12">0.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script>

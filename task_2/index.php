@@ -5,5 +5,5 @@ try {
     Env::init();
     Env::getRequest()->getRouter()->execute();
 } catch (Exception $e) {
-    var_dump($e); exit;
+    //var_dump($e); exit;
 }

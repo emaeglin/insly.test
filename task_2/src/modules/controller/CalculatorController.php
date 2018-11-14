@@ -11,15 +11,17 @@ class CalculatorController
                 $form->name->getValue(),
                 $form->estimated_value->getValue(),
                 $form->tax_percentage->getValue(),
-                $form->instalments->getValue()
+                $form->instalments->getValue(),
+                $form->tz_offset->getValue()
             );
 
             $calculator = new Calculator($params);
-            $calculator->getRates();
-            exit;
-        } catch (\Exception $e) {
-            var_dump($e);
-        }
+            $rates = $calculator->getRates();
 
+            $response = Response::json($rates);
+            var_dump($response); exit;
+        } catch (\Exception $e) {
+            var_dump($e->getMessage());
+        }
     }
 }

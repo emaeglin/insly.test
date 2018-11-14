@@ -5,7 +5,7 @@ abstract class Validator {
     private $hasError;
 
     public function addError($field, $errorMsg) {
-        $this->{$field}->setError(Utils::trans($errorMsg));
+        $this->{$field}->setError($errorMsg);
         $this->hasError = true;
     }
 
